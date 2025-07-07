@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,6 +17,8 @@ namespace Dogabeey
         public static LevelScene Instance;
 
         public string levelName;
+        [InlineEditor(Expanded = true)]
+        public LevelEditor LevelEditor;
 
         private void Awake()
         {

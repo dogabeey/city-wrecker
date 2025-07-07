@@ -13,6 +13,7 @@ namespace Dogabeey
         public List<World> worlds;
         public Transform levelContainer;
         public ParticleSystem winParticle;
+        public List<ElementData> elementData;
 
         private World currentWorld;
 

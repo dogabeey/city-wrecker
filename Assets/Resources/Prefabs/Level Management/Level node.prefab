@@ -32,7 +32,6 @@ RectTransform:
   m_Children:
   - {fileID: 1289988722}
   m_Father: {fileID: 564983191}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -108,7 +107,6 @@ RectTransform:
   m_Children:
   - {fileID: 32607298}
   m_Father: {fileID: 1736551852718279020}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -194,7 +192,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 32607298}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -250,9 +247,7 @@ GameObject:
   - component: {fileID: 1736551852718279020}
   - component: {fileID: 1736551852718279009}
   - component: {fileID: 1736551852718279022}
-  - component: {fileID: 1736551852718279023}
   - component: {fileID: 5017113214803595729}
-  - component: {fileID: 2222312597530287932}
   - component: {fileID: 5586784468451304119}
   m_Layer: 0
   m_Name: Level node
@@ -277,7 +272,6 @@ RectTransform:
   - {fileID: 3242808244896322567}
   - {fileID: 564983191}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -322,22 +316,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1736551852718279023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736551852718279021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efe2784488b47484798c3d2b411a8ce6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelScene: {fileID: 8150175311825758849, guid: 0b29582f7fe0a6247b4d70c1199efebd, type: 3}
-  requiredLevels: []
-  specificName: 
-  isPassed: 0
 --- !u!114 &5017113214803595729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -382,28 +360,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2222312597530287932
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1736551852718279021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15f72b3e8825fd94e8b5da7e2b8c1ba6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  worldManager: {fileID: 0}
-  levelNode: {fileID: 1736551852718279023}
-  levelNameText: {fileID: 399540094235610962}
-  levelButton: {fileID: 5017113214803595729}
-  checkmarkImage: {fileID: 3152194033707605593}
-  selectionToggle: {fileID: 0}
-  drawLines: 1
-  lineSprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  lineColor: {r: 1, g: 1, b: 1, a: 1}
-  lineWidth: 0.1
 --- !u!114 &5586784468451304119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -450,7 +406,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1736551852718279020}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -526,7 +481,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1736551852718279020}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -563,8 +517,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 01
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
-  m_sharedMaterial: {fileID: 2140474, guid: 8a89fa14b10d46a99122fd4f73fca9a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -588,7 +542,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 61.3
+  m_fontSize: 72
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -604,15 +558,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 1
   m_isCullingEnabled: 0

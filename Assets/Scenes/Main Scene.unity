@@ -938,7 +938,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -3300,6 +3300,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573077049}
   m_CullTransparentMesh: 1
+--- !u!1 &1582774588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1582774590}
+  - component: {fileID: 1582774589}
+  m_Layer: 0
+  m_Name: Level
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1582774589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582774588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a59566781b86a438e55bddbdc53974, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isWin: 0
+  isLose: 0
+  isEnded: 0
+  levelName: 
+  LevelEditor: {fileID: 11400000, guid: 0491c61305d0da94b9085966114ce282, type: 2}
+--- !u!4 &1582774590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582774588}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608075976
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,7 +3928,7 @@ MonoBehaviour:
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
-  m_ActiveFontFeatures: 00000000
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -4835,6 +4884,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 492599855}
     m_Modifications:
     - target: {fileID: 644633935809884574, guid: 0495dc49c91802045be0cc8a54c0df77, type: 3}
@@ -4890,6 +4940,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1892224948}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0495dc49c91802045be0cc8a54c0df77, type: 3}
 --- !u!4 &6343010874917991891 stripped
 Transform:
@@ -5025,6 +5078,50 @@ PrefabInstance:
       propertyPath: levelContainer
       value: 
       objectReference: {fileID: 254586920}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[0].elementName
+      value: Blue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[1].elementName
+      value: Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[0].elementColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[0].elementColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[0].elementColor.g
+      value: 0.46073484
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[0].elementColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[1].elementColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[1].elementColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[1].elementColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: elementData.Array.data[1].elementColor.r
+      value: 0.55299723
+      objectReference: {fileID: 0}
     - target: {fileID: 7722314759461277707, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -5079,6 +5176,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 4133448082132307929}
     m_Modifications:
     - target: {fileID: 8600629129307228682, guid: 50debb14cbb92794facaf76f10390ee9, type: 3}
@@ -5170,6 +5268,9 @@ PrefabInstance:
       value: Action Bar Panel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50debb14cbb92794facaf76f10390ee9, type: 3}
 --- !u!1001 &8975511618274796149
 PrefabInstance:
@@ -5242,3 +5343,4 @@ SceneRoots:
   - {fileID: 1675246476}
   - {fileID: 4133448082132307929}
   - {fileID: 492599855}
+  - {fileID: 1582774590}
