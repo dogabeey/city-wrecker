@@ -54,18 +54,31 @@ public class LevelEditor : SerializedScriptableObject
 
         // EVENTS
         Event e = Event.current;
-        // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
         if (e.type == EventType.MouseDown && e.button == 1 && rect.Contains(e.mousePosition))
         {
+            // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
             GenericMenu menu = new GenericMenu();
             foreach (ElementData element in WorldManager.Instance.elementData)
             {
-                menu.AddItem(new GUIContent(element.elementName.ToString()), false, () =>
+                menu.AddItem(new GUIContent("Add " + element.elementName.ToString()), false, () =>
                 {
                     // Add the color to the cell
                     value.elements.Add(element);
                 });
             }
+            menu.AddSeparator("");
+            // Add values for the existing elements in the cell to remove them.
+            for (int i = 0; i < value.elements.Count; i++)
+            {
+                int temp = i;
+                ElementData element = value.elements[temp];
+                menu.AddItem(new GUIContent("(" + temp + ") Remove " + element.elementName.ToString()), false, () =>
+                {
+                    // Remove the color from the cell
+                    value.elements.RemoveAt(temp);
+                });
+            }
+
             menu.ShowAsContext();
             e.Use();
         }
