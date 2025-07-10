@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using Sirenix.Utilities.Editor;
 using Dogabeey;
+using static UnityEngine.Rendering.DebugUI;
 
 [CreateAssetMenu(fileName = "LevelEditor", menuName = "Scriptable Objects/LevelEditor")]
 public class LevelEditor : SerializedScriptableObject
@@ -23,6 +24,20 @@ public class LevelEditor : SerializedScriptableObject
             {
                 gridCells[i, j] = new CellData();
                 gridCells[i, j].elements = new List<ElementData>();
+                gridCells[i, j].coordinates = new Vector2Int(i, j);
+                gridCells[i, j].gridType = (gridCells[i, j].coordinates.x + gridCells[i, j].coordinates.y) % 2 == 1 ? GridType.empty : GridType.floor; // Set grid type based on coordinates
+            }
+        }
+    }
+    [Button]
+    public void Refresh()
+    {
+        for (int i = 0; i < gridWidth; i++)
+        {
+            for (int j = 0; j < gridHeight; j++)
+            {
+                gridCells[i, j].coordinates = new Vector2Int(i, j);
+                gridCells[i, j].gridType = (gridCells[i, j].coordinates.x + gridCells[i, j].coordinates.y) % 2 == 1 ? GridType.empty : GridType.floor; // Set grid type based on coordinates
             }
         }
     }
@@ -32,6 +47,9 @@ public class LevelEditor : SerializedScriptableObject
 
 
         // INIT
+        // Check if odd cell
+        bool isOddCell = false;
+        if ((value.coordinates.x + value.coordinates.y) % 2 == 1)  isOddCell = true;
         // Initialize 3x3 nine squares to each cell.
         List<Rect> nineSquares = new List<Rect>(9);
         for (int i = 0; i < 3; i++)
@@ -44,9 +62,10 @@ public class LevelEditor : SerializedScriptableObject
         }
 
         // DRAWING
+        // Paint the rect black if It's an odd cell
+        if(isOddCell)
+            EditorGUI.DrawRect(rect, Color.black);
         // Draw the nine squares in the cell
-        if (value == null) Debug.LogError("Value is null");
-        if (value.elements == null) Debug.LogError("Value elements are null");
         for (int i = 0; i < value.elements.Count; i++)
         {
             EditorGUI.DrawRect(nineSquares[i], value.elements[i].elementColor);
@@ -54,35 +73,38 @@ public class LevelEditor : SerializedScriptableObject
 
         // EVENTS
         Event e = Event.current;
-        if (e.type == EventType.MouseDown && e.button == 1 && rect.Contains(e.mousePosition))
+        if (!isOddCell)
         {
-            // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
-            GenericMenu menu = new GenericMenu();
-            foreach (ElementData element in WorldManager.Instance.elementData)
-            {
-                menu.AddItem(new GUIContent("Add " + element.elementName.ToString()), false, () =>
-                {
-                    // Add the color to the cell
-                    value.elements.Add(element);
-                });
-            }
-            menu.AddSeparator("");
-            // Add values for the existing elements in the cell to remove them.
-            for (int i = 0; i < value.elements.Count; i++)
-            {
-                int temp = i;
-                ElementData element = value.elements[temp];
-                menu.AddItem(new GUIContent("(" + temp + ") Remove " + element.elementName.ToString()), false, () =>
-                {
-                    // Remove the color from the cell
-                    value.elements.RemoveAt(temp);
-                });
-            }
 
-            menu.ShowAsContext();
-            e.Use();
+            if (e.type == EventType.MouseDown && e.button == 1 && rect.Contains(e.mousePosition))
+            {
+                // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
+                GenericMenu menu = new GenericMenu();
+                foreach (ElementData element in WorldManager.Instance.elementData)
+                {
+                    menu.AddItem(new GUIContent("Add " + element.elementName.ToString()), false, () =>
+                    {
+                        // Add the color to the cell
+                        value.elements.Add(element);
+                    });
+                }
+                menu.AddSeparator("");
+                // Add values for the existing elements in the cell to remove them.
+                for (int i = 0; i < value.elements.Count; i++)
+                {
+                    int temp = i;
+                    ElementData element = value.elements[temp];
+                    menu.AddItem(new GUIContent("(" + temp + ") Remove " + element.elementName.ToString()), false, () =>
+                    {
+                        // Remove the color from the cell
+                        value.elements.RemoveAt(temp);
+                    });
+                }
+
+                menu.ShowAsContext();
+                e.Use();
+            }
         }
-
         GUI.changed = true;
 
         return value;

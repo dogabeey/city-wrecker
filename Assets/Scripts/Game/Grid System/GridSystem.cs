@@ -1,3 +1,5 @@
+using Dogabeey;
+using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,7 +9,9 @@ public abstract class GridSystem : MonoBehaviour
 
     [Header("Generation Settings")]
     public GridCell cellPrefab;
+    public Element elementPrefab;
     public Transform levelParent;
+    public Plane plane;
     public Vector3 offset;
     public Vector3 spacing;
 
@@ -17,40 +21,19 @@ public abstract class GridSystem : MonoBehaviour
     {
         Instance = this;
     }
+
+    private void Start()
+    {
+        GenerateGrid(LevelScene.Instance.LevelEditor.gridCells);
+    }
+
     public abstract void GenerateGrid(CellData[,] cells);
 
 }
 
-public class SquareGridSystem : GridSystem
+public enum Plane
 {
-    public override void GenerateGrid(CellData[,] cells)
-    {
-        for (int i = 0; i < cells.GetLength(0); i++)
-        {
-            for (int j = 0; j < cells.GetLength(1); j++)
-            {
-                if (cells[i, j] == null)
-                {
-                    cells[i, j] = new CellData();
-                }
-            }
-        }
-
-        grid = new GridCell[cells.GetLength(0), cells.GetLength(1)];
-
-        for (int i = 0; i < grid.GetLength(0); i++)
-        {
-            for (int j = 0; j < grid.GetLength(1); j++)
-            {
-                GridCell cell = Instantiate(cellPrefab, levelParent);
-                cell.transform.localPosition = new Vector3(i * spacing.x, -j * spacing.y, 0);
-                cell.Init(i, j, cells[i, j]);
-                grid[i, j] = cell;
-            }
-        }
-
-        //Make all cells so they are positioned in the center of the level.
-        levelParent.transform.localPosition = new Vector3(-spacing.x * (cells.GetLength(0) - 1) / 2, spacing.y * (cells.GetLength(1) - 1) / 2, 0);
-        levelParent.transform.localPosition += offset;
-    }
+    XY,
+    XZ,
+    YZ
 }

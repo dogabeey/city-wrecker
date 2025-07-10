@@ -2,15 +2,17 @@ using UnityEngine;
 
 public class Element : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    internal ElementData elementData;
+
+    public Renderer elementRenderer;
+
+    public virtual void Init(ElementData data)
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        elementData = data;
+        if (elementRenderer != null)
+        {
+            elementRenderer.material.color = elementData.elementColor;
+        }
+        name = elementData.elementName;
     }
 }
