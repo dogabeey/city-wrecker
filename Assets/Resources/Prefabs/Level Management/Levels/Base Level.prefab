@@ -178,6 +178,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 4666472968248984407}
     m_Modifications:
     - target: {fileID: -2584420359528032706, guid: 3025e3dcac6c9864080c70c5facb3299, type: 3}
+      propertyPath: plane
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2584420359528032706, guid: 3025e3dcac6c9864080c70c5facb3299, type: 3}
       propertyPath: spacing.y
       value: 1.3
       objectReference: {fileID: 0}
