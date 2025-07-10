@@ -29,6 +29,23 @@ public abstract class GridSystem : MonoBehaviour
 
     public abstract void GenerateGrid(CellData[,] cells);
 
+    internal void RelocateGrid(CellData[,] cells)
+    {
+
+        //Make all cells so they are positioned in the center of the level, based on the plane.
+        switch (plane)
+        {
+            case Plane.XY:
+                levelParent.transform.localPosition = new Vector3(-spacing.x * (cells.GetLength(0) - 1) / 2, spacing.y * (cells.GetLength(1) - 1) / 2, 0);
+                break;
+            case Plane.XZ:
+                levelParent.transform.localPosition = new Vector3(-spacing.x * (cells.GetLength(0) - 1) / 2, 0, spacing.y * (cells.GetLength(1) - 1) / 2);
+                break;
+            case Plane.YZ:
+                levelParent.transform.localPosition = new Vector3(0, -spacing.y * (cells.GetLength(0) - 1) / 2, spacing.x * (cells.GetLength(1) - 1) / 2);
+                break;
+        }
+    }
 }
 
 public enum Plane

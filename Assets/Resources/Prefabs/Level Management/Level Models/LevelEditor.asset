@@ -560,10 +560,37 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 9
       Data: 11
+    - Name: 
+      Entry: 7
+      Data: 32|ElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Green
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.552997231
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 13
       Data: 
@@ -575,7 +602,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 32|CellData, Assembly-CSharp
+      Data: 33|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -593,7 +620,7 @@ MonoBehaviour:
       Data: 0
     - Name: elements
       Entry: 7
-      Data: 33|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 34|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -609,7 +636,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 34|CellData, Assembly-CSharp
+      Data: 35|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -627,7 +654,7 @@ MonoBehaviour:
       Data: 1
     - Name: elements
       Entry: 7
-      Data: 35|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 36|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -643,7 +670,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 36|CellData, Assembly-CSharp
+      Data: 37|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -661,7 +688,7 @@ MonoBehaviour:
       Data: 0
     - Name: elements
       Entry: 7
-      Data: 37|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 38|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -677,7 +704,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 38|CellData, Assembly-CSharp
+      Data: 39|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -695,7 +722,7 @@ MonoBehaviour:
       Data: 1
     - Name: elements
       Entry: 7
-      Data: 39|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 40|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -711,7 +738,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 40|CellData, Assembly-CSharp
+      Data: 41|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -729,7 +756,7 @@ MonoBehaviour:
       Data: 0
     - Name: elements
       Entry: 7
-      Data: 41|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 42|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -745,7 +772,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 42|CellData, Assembly-CSharp
+      Data: 43|CellData, Assembly-CSharp
     - Name: coordinates
       Entry: 7
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
@@ -763,48 +790,44 @@ MonoBehaviour:
       Data: 1
     - Name: elements
       Entry: 7
-      Data: 43|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 44|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 9
       Data: 11
     - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
       Entry: 7
-      Data: 44|CellData, Assembly-CSharp
-    - Name: coordinates
+      Data: 45|ElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Blue
+    - Name: elementColor
       Entry: 7
-      Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
+      Data: UnityEngine.Color, UnityEngine.CoreModule
     - Name: 
-      Entry: 3
-      Data: 2
-    - Name: 
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: gridType
-      Entry: 3
+      Entry: 4
       Data: 0
-    - Name: elements
-      Entry: 7
-      Data: 45|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
-        mscorlib
     - Name: 
-      Entry: 12
-      Data: 0
+      Entry: 4
+      Data: 0.460734844
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 9
+      Data: 32
     - Name: 
       Entry: 13
       Data: 
@@ -825,23 +848,20 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 47|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -862,20 +882,23 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 49|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -896,23 +919,20 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 51|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -933,20 +953,23 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 53|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -967,13 +990,13 @@ MonoBehaviour:
       Data: 2
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 55|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -998,16 +1021,16 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 57|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1035,13 +1058,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 59|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1069,13 +1092,13 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 61|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1103,23 +1126,20 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 63|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1140,20 +1160,23 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 65|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1174,23 +1197,20 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 67|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1211,20 +1231,23 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 69|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1245,23 +1268,20 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 71|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1282,20 +1302,23 @@ MonoBehaviour:
       Data: 3
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 73|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1313,16 +1336,16 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 75|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1350,13 +1373,13 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 77|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1384,13 +1407,13 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 79|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1418,13 +1441,13 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 81|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1452,23 +1475,20 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 83|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1489,20 +1509,26 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 85|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 32
     - Name: 
       Entry: 13
       Data: 
@@ -1523,23 +1549,20 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 87|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1560,20 +1583,23 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 89|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1594,23 +1620,20 @@ MonoBehaviour:
       Data: 4
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 91|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1628,23 +1651,26 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 93|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1665,13 +1691,13 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 95|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1699,13 +1725,13 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 97|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1733,23 +1759,20 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 99|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1770,20 +1793,23 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 101|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1804,23 +1830,20 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 103|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1841,20 +1864,26 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 105|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 45
     - Name: 
       Entry: 13
       Data: 
@@ -1875,23 +1904,20 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 107|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -1912,20 +1938,23 @@ MonoBehaviour:
       Data: 5
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 109|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -1943,16 +1972,16 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 111|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -1980,13 +2009,13 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 113|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2014,23 +2043,20 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 115|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2051,20 +2077,26 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 117|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 32
     - Name: 
       Entry: 13
       Data: 
@@ -2085,23 +2117,20 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 119|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2122,20 +2151,23 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 121|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -2156,23 +2188,20 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 123|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2193,20 +2222,23 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 125|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 11
     - Name: 
       Entry: 13
       Data: 
@@ -2227,13 +2259,13 @@ MonoBehaviour:
       Data: 6
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 127|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2258,16 +2290,16 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 129|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2295,13 +2327,13 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 131|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2329,13 +2361,13 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 133|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2363,23 +2395,20 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 135|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2400,20 +2429,26 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 137|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 45
     - Name: 
       Entry: 13
       Data: 
@@ -2434,23 +2469,20 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 139|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2471,20 +2503,26 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 141|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 32
     - Name: 
       Entry: 13
       Data: 
@@ -2505,13 +2543,13 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 143|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2539,13 +2577,13 @@ MonoBehaviour:
       Data: 7
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 145|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2570,16 +2608,16 @@ MonoBehaviour:
       Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
     - Name: 
       Entry: 3
-      Data: 8
+      Data: 7
     - Name: 
       Entry: 3
-      Data: 0
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 147|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2607,13 +2645,13 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 149|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2641,13 +2679,13 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 151|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2675,13 +2713,13 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 153|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2709,23 +2747,20 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 4
+      Data: 3
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 155|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 9
-      Data: 11
+      Data: 0
     - Name: 
       Entry: 13
       Data: 
@@ -2746,20 +2781,26 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 157|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 11
+    - Name: 
+      Entry: 9
+      Data: 32
     - Name: 
       Entry: 13
       Data: 
@@ -2780,13 +2821,13 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 6
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 1
+      Data: 0
     - Name: elements
       Entry: 7
       Data: 159|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2814,13 +2855,13 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
-      Data: 7
+      Data: 6
     - Name: 
       Entry: 8
       Data: 
     - Name: gridType
       Entry: 3
-      Data: 0
+      Data: 1
     - Name: elements
       Entry: 7
       Data: 161|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
@@ -2848,6 +2889,40 @@ MonoBehaviour:
       Data: 8
     - Name: 
       Entry: 3
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: gridType
+      Entry: 3
+      Data: 0
+    - Name: elements
+      Entry: 7
+      Data: 163|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 164|CellData, Assembly-CSharp
+    - Name: coordinates
+      Entry: 7
+      Data: UnityEngine.Vector2Int, UnityEngine.CoreModule
+    - Name: 
+      Entry: 3
+      Data: 8
+    - Name: 
+      Entry: 3
       Data: 8
     - Name: 
       Entry: 8
@@ -2857,7 +2932,7 @@ MonoBehaviour:
       Data: 1
     - Name: elements
       Entry: 7
-      Data: 163|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+      Data: 165|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
