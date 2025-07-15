@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
 public class CellData
 {
     public Vector2Int coordinates;
@@ -20,4 +19,5 @@ public class ElementData
 {
     public string elementName;
     public Color elementColor = Color.white;
+    public Material elementMaterial;
 }

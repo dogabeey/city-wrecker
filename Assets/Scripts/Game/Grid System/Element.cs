@@ -11,7 +11,7 @@ public class Element : MonoBehaviour
         elementData = data;
         if (elementRenderer != null)
         {
-            elementRenderer.material.color = elementData.elementColor;
+            elementRenderer.material = elementData.elementMaterial;
         }
         name = elementData.elementName;
     }

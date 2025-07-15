@@ -24,13 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7722314759128445689}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7722314759461277707}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7722314759128445691
 MonoBehaviour:
@@ -73,14 +73,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7722314759461277705}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7722314759128445690}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7722314759461277706
 MonoBehaviour:
@@ -98,3 +98,23 @@ MonoBehaviour:
   worlds:
   - {fileID: 7722314759128445691}
   levelContainer: {fileID: 0}
+  winParticle: {fileID: 0}
+  elementData:
+  - elementName: Blue
+    elementColor: {r: 0, g: 0.46073484, b: 1, a: 1}
+    elementMaterial: {fileID: 2100000, guid: 6ee122385aff2874591f3528d70dabf6, type: 2}
+  - elementName: Green
+    elementColor: {r: 0.55299723, g: 1, b: 0, a: 1}
+    elementMaterial: {fileID: 2100000, guid: 4f4402083a692ca4e9cb007ab99c4eb4, type: 2}
+  - elementName: Yellow
+    elementColor: {r: 1, g: 0.9345745, b: 0, a: 1}
+    elementMaterial: {fileID: 2100000, guid: 98f610e113b588342ae993b86c6ddfe4, type: 2}
+  - elementName: Red
+    elementColor: {r: 1, g: 0.07075471, b: 0.07075471, a: 1}
+    elementMaterial: {fileID: 2100000, guid: 8b3cd2681b7f25844b340abeaeb23566, type: 2}
+  - elementName: Orange
+    elementColor: {r: 1, g: 0.51687396, b: 0, a: 1}
+    elementMaterial: {fileID: 2100000, guid: 0dfe855a0e712d34f92d6fc0449df78e, type: 2}
+  - elementName: Purple
+    elementColor: {r: 0.4666667, g: 0.121568635, b: 0.61960787, a: 1}
+    elementMaterial: {fileID: 2100000, guid: acf0ca22a31f48c4f8b322960aae1976, type: 2}
