@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Dogabeey
+namespace Lionsfall
 {
     public class WorldManager : SingletonComponent<WorldManager>
     {
@@ -107,6 +107,10 @@ namespace Dogabeey
             return World.Instance.levelScenes[World.Instance.lastPlayedLevelIndex % World.Instance.levelScenes.Count];
         }
 
+        public ElementData GetElementDataByName(string elementName)
+        {
+            return elementData.Find(x => x.elementName == elementName);
+        }
     }
 }
 

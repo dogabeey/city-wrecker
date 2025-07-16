@@ -3,7 +3,7 @@ using UnityEditor;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using Sirenix.Utilities.Editor;
-using Dogabeey;
+using Lionsfall;
 using static UnityEngine.Rendering.DebugUI;
 
 [CreateAssetMenu(fileName = "LevelEditor", menuName = "Scriptable Objects/LevelEditor")]
