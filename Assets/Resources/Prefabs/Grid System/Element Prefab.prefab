@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2721621986828003039}
   - component: {fileID: -8885877209667280229}
-  m_Layer: 0
+  - component: {fileID: 8034309223980236749}
+  m_Layer: 10
   m_Name: Element Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,6 +47,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   elementRenderer: {fileID: 8613226374384176005}
+--- !u!65 &8034309223980236749
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939895668231782231}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &3898618443673321566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -102,6 +124,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4561692748064829168, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: -3143613775585479299, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
@@ -109,6 +135,10 @@ PrefabInstance:
     - target: {fileID: -3143613775585479299, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -2223408074145290539, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -487899800064549610, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -121,6 +151,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
       propertyPath: m_Name
       value: building_piece
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6109460854992238787, guid: 77a345d22fc38c84f80b2340ca754dd5, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

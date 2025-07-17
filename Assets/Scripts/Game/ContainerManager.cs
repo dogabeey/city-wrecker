@@ -6,7 +6,7 @@ using System.Linq;
 using Lionsfall;
 using DG.Tweening;
 
-public class ContainerManager : MonoBehaviour
+public class ContainerManager : SingletonComponent<ContainerManager>
 {
     public List<Container> containers = new List<Container>();
     [Header("References")]
