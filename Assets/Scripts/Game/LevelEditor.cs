@@ -4,11 +4,13 @@ using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using Sirenix.Utilities.Editor;
 using Lionsfall;
-using static UnityEngine.Rendering.DebugUI;
+using System.Linq;
 
 [CreateAssetMenu(fileName = "LevelEditor", menuName = "Scriptable Objects/LevelEditor")]
 public class LevelEditor : SerializedScriptableObject
 {
+    [ValueDropdown(nameof(GetAllElementNames))]
+    public List<string> containerColorList;
     public int gridWidth = 10; // Width of the grid
     public int gridHeight = 10; // Height of the grid
     [TableMatrix(DrawElementMethod = nameof(DrawCell), SquareCells = true, ResizableColumns = false)]
@@ -109,5 +111,20 @@ public class LevelEditor : SerializedScriptableObject
 
         return value;
     }
-
+    public static IEnumerable<string> GetAllElementNames()
+    {
+        WorldManager worldManager = WorldManager.Instance;
+        if (worldManager == null)
+        {
+            Debug.LogWarning("WorldManager or currentWorld is not initialized.");
+            return Enumerable.Empty<string>();
+        }
+        else
+        {
+            return worldManager.elementData.Select(data => data.elementName)
+                                            .Where(name => !string.IsNullOrEmpty(name))
+                                            .Distinct()
+                                            .OrderBy(name => name);
+        }
+    }
 }

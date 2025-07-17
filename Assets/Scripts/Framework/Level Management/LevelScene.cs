@@ -24,6 +24,8 @@ namespace Lionsfall
         {
             Instance = this;
             EventManager.TriggerEvent(Const.GameEvents.LEVEL_STARTED, new EventParam());
+
+            ContainerManager.Instance.GenerateContainers(LevelEditor.containerColorList);
         }
 
         private void Update()

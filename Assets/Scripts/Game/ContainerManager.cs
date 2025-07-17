@@ -14,6 +14,7 @@ public class ContainerManager : SingletonComponent<ContainerManager>
     public Container mainContainerPrefab;
     public Container tempContainer;
     [Header("Container Generation Settings")]
+    public Transform containersParent;
     public Transform firstContainerPos;
     public Vector3 containerOffset;
     [Header("Container Movement Settings")]
@@ -25,20 +26,28 @@ public class ContainerManager : SingletonComponent<ContainerManager>
 
 
     // Create containers using the main container prefab.
-    public virtual void GenerateContainers(List<Container> containers)
+    public virtual void GenerateContainers(List<string> elementNameList)
     {
-        this.containers = containers;
-
-        foreach(Container container in containers)
+        foreach (string elementName in elementNameList)
         {
-            if (container == null)
+            int index = elementNameList.IndexOf(elementName);
+            ElementData elementData = WorldManager.Instance.GetElementDataByName(elementName);
+
+            Container container = Instantiate(mainContainerPrefab, containersParent);
+            container.transform.position = firstContainerPos.position + containerOffset * index;
+            container.Init(elementData);
+        }
+
+        foreach(Container c in containers)
+        {
+            if (c == null)
             {
                 Debug.LogWarning("Container is null, skipping.");
                 continue;
             }
-            container.transform.SetParent(transform);
-            container.transform.localPosition = firstContainerPos.localPosition + containerOffset * containers.IndexOf(container);
-            container.gameObject.SetActive(true);
+            c.transform.SetParent(transform);
+            c.transform.localPosition = firstContainerPos.localPosition + containerOffset * containers.IndexOf(c);
+            c.gameObject.SetActive(true);
         }
     }
 

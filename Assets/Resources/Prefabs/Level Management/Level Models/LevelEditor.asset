@@ -768,6 +768,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 0
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -798,6 +801,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 1
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -899,6 +905,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 2
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1207,6 +1216,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 3
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1237,6 +1249,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 0
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1335,6 +1350,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 1
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1365,6 +1383,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 1
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1599,6 +1620,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 2
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1629,6 +1653,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 3
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1727,6 +1754,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 4
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1757,6 +1787,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 4
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1858,6 +1891,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 2
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2092,6 +2128,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 0
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2406,6 +2445,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 4
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2504,6 +2546,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 5
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -2608,6 +2653,9 @@ MonoBehaviour:
     - Name: elementMaterial
       Entry: 10
       Data: 3
+    - Name: containerMaterial
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -3306,5 +3354,10 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  containerColorList:
+  - Blue
+  - Green
+  - Blue
+  - Yellow
   gridWidth: 9
   gridHeight: 9

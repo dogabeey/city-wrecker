@@ -12,6 +12,7 @@ public class Container : MonoBehaviour
     [Tooltip("The name of the container, used for identification.")]
     [ValueDropdown("GetAllElementNames")]
     public string elementName;
+    public MeshRenderer containerRenderer;
     public List<Slot> slots = new List<Slot>();
 
     public bool TryAddElementToFirstFreeSlot(Element element)
@@ -43,5 +44,11 @@ public class Container : MonoBehaviour
                                             .Distinct()
                                             .OrderBy(name => name);
         }
+    }
+
+    internal void Init(ElementData elementData)
+    {
+        elementName = elementData.elementName;
+        containerRenderer.material = elementData.containerMaterial;
     }
 }
