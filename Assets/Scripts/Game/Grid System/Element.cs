@@ -21,7 +21,7 @@ public class Element : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        Debug.Log("Clicked on element: " + elementData.elementName);
+        SendElementToFittingContainer();
     }
 
     public void SendElementToFittingContainer()

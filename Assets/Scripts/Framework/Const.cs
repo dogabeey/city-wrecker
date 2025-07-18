@@ -66,6 +66,7 @@ namespace Lionsfall
             public const string CURRENT_WORLD_CHANGED = "CURRENT_WORLD_CHANGED";
 
             public const string ELEMENT_ADDED_TO_SLOT = "ELEMENT_ADDED_TO_SLOT";
+            public const string CONTAINER_IS_FULL = "CONTAINER_IS_FULL";
         }
     }
 }

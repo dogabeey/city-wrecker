@@ -36,6 +36,8 @@ public class ContainerManager : SingletonComponent<ContainerManager>
             Container container = Instantiate(mainContainerPrefab, containersParent);
             container.transform.position = firstContainerPos.position + containerOffset * index;
             container.Init(elementData);
+
+            containers.Add(container);
         }
 
         foreach(Container c in containers)

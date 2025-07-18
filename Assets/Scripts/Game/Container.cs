@@ -21,7 +21,7 @@ public class Container : MonoBehaviour
         {
             if (slot.IsFree())
             {
-                slot.AddElement(element, isMainContainer);
+                slot.AddElement(element, this);
                 return true;
             }
         }
@@ -50,5 +50,11 @@ public class Container : MonoBehaviour
     {
         elementName = elementData.elementName;
         containerRenderer.material = elementData.containerMaterial;
+    }
+
+    internal bool IsFull()
+    {
+        // Check if all slots are full
+        return slots.All(slot => !slot.IsFree());
     }
 }
