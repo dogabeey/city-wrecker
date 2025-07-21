@@ -62,10 +62,7 @@ public class ContainerManager : SingletonComponent<ContainerManager>
             {
                 EventManager.TriggerEvent(Const.GameEvents.LEVEL_COMPLETED, new EventParam());
             }
-            else
-            {
-                StartCoroutine(SendNextContainer());
-            }
+            StartCoroutine(SendNextContainer());
         }
         else
         {
@@ -99,6 +96,8 @@ public class ContainerManager : SingletonComponent<ContainerManager>
         }
 
         yield return new WaitForSeconds(containerMoveDuration);
-        OnNextContainerArrived(CurrentContainer);
+
+        if(containers.Count > 0)
+            OnNextContainerArrived(CurrentContainer);
     }
 }
