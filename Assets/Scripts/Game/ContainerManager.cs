@@ -7,7 +7,7 @@ using Lionsfall;
 using DG.Tweening;
 using System.Collections;
 
-public class ContainerManager : SingletonComponent<ContainerManager>
+public class ContainerManager : MonoBehaviour
 {
     public List<Container> containers = new List<Container>();
     [Header("References")]
@@ -25,10 +25,16 @@ public class ContainerManager : SingletonComponent<ContainerManager>
 
     public Container CurrentContainer => containers[0];
 
+    private void Start()
+    {
+        GenerateContainers(LevelScene.Instance.LevelEditor.containerColorList);
+    }
 
     // Create containers using the main container prefab.
     public virtual void GenerateContainers(List<string> elementNameList)
     {
+        Debug.Log("Generating containers with element names: " + string.Join(", ", elementNameList));
+
         foreach (string elementName in elementNameList)
         {
             int index = elementNameList.IndexOf(elementName);

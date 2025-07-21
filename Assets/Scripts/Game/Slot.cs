@@ -9,6 +9,7 @@ using DG.Tweening;
 
 public class Slot : MonoBehaviour
 {
+
     public Element element; // The element currently occupying this slot
 
     public bool IsFree()
@@ -27,7 +28,7 @@ public class Slot : MonoBehaviour
             element.transform.SetParent(transform); // Set the parent of the element to this slot
             if (!ownerContainer.isMainContainer && ownerContainer.IsFull()) // If temp container, immediately fire full event.
             {
-                ContainerManager.Instance.OnContainerIsFull(ownerContainer);
+                LevelScene.Instance.containerManager.OnContainerIsFull(ownerContainer);
             }
 
             element.transform.DOMove(transform.position, 0.5f).SetEase(Ease.OutBack).OnComplete(() =>
@@ -35,7 +36,7 @@ public class Slot : MonoBehaviour
                 if (ownerContainer.isMainContainer && ownerContainer.IsFull()) // If the main container, fire the full event after the movement is over.
                 {
                     Debug.Log(ownerContainer.name + " is full. Triggering on containerfull method.");
-                    ContainerManager.Instance.OnContainerIsFull(ownerContainer);
+                    LevelScene.Instance.containerManager.OnContainerIsFull(ownerContainer);
                 }
             });
         }

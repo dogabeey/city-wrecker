@@ -13,6 +13,7 @@ namespace Lionsfall
         [HideInInspector] public bool isWin;
         [HideInInspector] public bool isLose;
         [HideInInspector] public bool isEnded;
+        [HideInInspector] public ContainerManager containerManager;
 
         public static LevelScene Instance;
 
@@ -20,13 +21,14 @@ namespace Lionsfall
         [InlineEditor(Expanded = true)]
         public LevelEditor LevelEditor;
 
-        private void Awake()
+        private void Start()
         {
             Instance = this;
             EventManager.TriggerEvent(Const.GameEvents.LEVEL_STARTED, new EventParam());
 
-            ContainerManager.Instance.GenerateContainers(LevelEditor.containerColorList);
+            containerManager = FindAnyObjectByType<ContainerManager>();
         }
+
 
         private void Update()
         {

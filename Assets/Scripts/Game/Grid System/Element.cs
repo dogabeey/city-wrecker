@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using Lionsfall;
 
 public class Element : MonoBehaviour, IPointerClickHandler
 {
@@ -26,9 +27,9 @@ public class Element : MonoBehaviour, IPointerClickHandler
 
     public void SendElementToFittingContainer()
     {
-        if(elementData.elementName == ContainerManager.Instance.CurrentContainer.elementName)
+        if(elementData.elementName == LevelScene.Instance.containerManager.CurrentContainer.elementName)
         {
-            if (ContainerManager.Instance.CurrentContainer.TryAddElementToFirstFreeSlot(this))
+            if (LevelScene.Instance.containerManager.CurrentContainer.TryAddElementToFirstFreeSlot(this))
             {
                 Debug.Log("Element " + elementData.elementName + " added to the main container.");
             }
@@ -37,7 +38,7 @@ public class Element : MonoBehaviour, IPointerClickHandler
                 Debug.Log("No free slot available in the container for element: " + elementData.elementName);
             }
         }
-        else if(ContainerManager.Instance.tempContainer.TryAddElementToFirstFreeSlot(this))
+        else if(LevelScene.Instance.containerManager.tempContainer.TryAddElementToFirstFreeSlot(this))
         {
             Debug.Log("Element " + elementData.elementName + " added to he temp container.");
         }
