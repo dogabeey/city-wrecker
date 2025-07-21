@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Lionsfall;
 using DG.Tweening;
+using System.Collections;
 
 public class ContainerManager : SingletonComponent<ContainerManager>
 {
@@ -63,7 +64,7 @@ public class ContainerManager : SingletonComponent<ContainerManager>
             }
             else
             {
-                SendNextContainer();
+                StartCoroutine(SendNextContainer());
             }
         }
         else
@@ -72,9 +73,20 @@ public class ContainerManager : SingletonComponent<ContainerManager>
             EventManager.TriggerEvent(Const.GameEvents.LEVEL_FAILED, new EventParam());
         }
     }
+    public virtual void OnNextContainerArrived(Container container)
+    {
+        // For each element that is currently on temp container, try to add it to the first free slot of the current container.
+        foreach (Element element in tempContainer.slots.Select(slot => slot.element).Where(element => element))
+        {
+            if (!container.TryAddElementToFirstFreeSlot(element))
+            {
+                Debug.LogWarning($"Container {container.elementName} is full, cannot add element {element.name}.");
+            }
+        }
+    }
 
     // Send the first container away to the designated move point and move the next container to the first position, then the second to the second position, and so on.
-    private void SendNextContainer()
+    private IEnumerator SendNextContainer()
     {
         Container sentAwayContainer = containers[0];
         sentAwayContainer.transform.DOMove(containerMovePoint.position, containerMoveDuration).SetEase(movementEase);
@@ -83,7 +95,10 @@ public class ContainerManager : SingletonComponent<ContainerManager>
 
         foreach(Container container in containers)
         {
-            container.transform.DOMove(container.transform.localPosition + containerOffset, containerMoveDuration).SetEase(movementEase);
+            container.transform.DOMove(-containerOffset, containerMoveDuration).SetRelative().SetEase(movementEase);
         }
+
+        yield return new WaitForSeconds(containerMoveDuration);
+        OnNextContainerArrived(CurrentContainer);
     }
 }

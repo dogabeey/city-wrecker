@@ -17,12 +17,23 @@ public class Container : MonoBehaviour
 
     public bool TryAddElementToFirstFreeSlot(Element element)
     {
-        foreach (Slot slot in slots)
+        if (elementName == element.elementData.elementName || !isMainContainer)
         {
-            if (slot.IsFree())
+            foreach (Slot slot in slots)
             {
-                slot.AddElement(element, this);
-                return true;
+                if (slot.IsFree())
+                {
+                    // Check if the element is already owned by a slot.
+                    Slot currentSlot = element.GetComponentInParent<Slot>();
+                    if (currentSlot)
+                    {
+                        currentSlot.element = null;
+                    }
+
+                    slot.AddElement(element, this);
+                    Debug.Log("Adding element to " + slot.name);
+                    return true;
+                }
             }
         }
 
@@ -48,6 +59,7 @@ public class Container : MonoBehaviour
 
     internal void Init(ElementData elementData)
     {
+        gameObject.name = elementData.elementName + " container";
         elementName = elementData.elementName;
         containerRenderer.material = elementData.containerMaterial;
     }

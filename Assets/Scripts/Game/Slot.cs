@@ -34,6 +34,7 @@ public class Slot : MonoBehaviour
             {
                 if (ownerContainer.isMainContainer && ownerContainer.IsFull()) // If the main container, fire the full event after the movement is over.
                 {
+                    Debug.Log(ownerContainer.name + " is full. Triggering on containerfull method.");
                     ContainerManager.Instance.OnContainerIsFull(ownerContainer);
                 }
             });
