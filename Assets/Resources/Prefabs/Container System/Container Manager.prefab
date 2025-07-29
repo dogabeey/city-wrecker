@@ -44,13 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d7d5721a6da5874bb9f991dff9913e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dontDestroyOnLoad: 1
   containers: []
-  mainContainerPrefab: {fileID: 0}
+  mainContainerPrefab: {fileID: -7004526976788545034, guid: 8f5e6b6b1748ac5448b8bfadbab0b902, type: 3}
   tempContainer: {fileID: 0}
-  containersParent: {fileID: 0}
+  containersParent: {fileID: 6714379472213315356}
   firstContainerPos: {fileID: 0}
-  containerOffset: {x: 0, y: 0, z: 0}
+  containerOffset: {x: -6, y: 0, z: 0}
   containerMoveDuration: 0.5
   containerMovePoint: {fileID: 0}
-  movementEase: 0
+  movementEase: 26

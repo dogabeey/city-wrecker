@@ -67,6 +67,8 @@ namespace Lionsfall
 
             public const string ELEMENT_ADDED_TO_SLOT = "ELEMENT_ADDED_TO_SLOT";
             public const string CONTAINER_IS_FULL = "CONTAINER_IS_FULL";
+            public const string ELEMENT_MATCHED = "ELEMENT_MATCHED";
+            public const string ELEMENT_PICKED = "ELEMENT_PICKED";
         }
     }
 }

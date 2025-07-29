@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8034309223980236749}
   - component: {fileID: 1215921832170162410}
   m_Layer: 10
-  m_Name: Element Prefab
+  m_Name: Jam Element
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -99,6 +99,7 @@ namespace Lionsfall
     public class EventParam
     {
         public GameObject paramObj;
+        public Element paramElement;
         public int paramInt;
         public float paramFloat;
         public string paramStr;

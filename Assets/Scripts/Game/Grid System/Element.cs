@@ -1,13 +1,16 @@
 using UnityEngine;
-using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine.Serialization;
 
-public abstract class Element : MonoBehaviour
+
+namespace Lionsfall
 {
-    internal ElementData elementData;
+    public abstract class Element : MonoBehaviour
+    {
+        internal ElementData elementData;
 
-    public Renderer elementRenderer;
+        public Renderer elementRenderer;
 
-    public abstract void Init(ElementData data);
+        public abstract void Init(ElementData data);
+    }
 }
