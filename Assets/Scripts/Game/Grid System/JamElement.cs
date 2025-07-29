@@ -8,9 +8,9 @@ public class JamElement : Element, IPointerClickHandler
     public override void Init(ElementData data)
     {
         elementData = data;
-        if (elementRenderer != null)
+        if (elementRenderer != null && elementData is JamElementData jamData)
         {
-            elementRenderer.material = elementData.elementMaterial;
+            elementRenderer.material = jamData.elementMaterial;
         }
         name = elementData.elementName;
     }

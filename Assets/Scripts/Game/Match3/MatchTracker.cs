@@ -10,10 +10,12 @@ namespace Lionsfall
         private void OnEnable()
         {
             EventManager.StartListening(Const.GameEvents.ELEMENT_PICKED, OnElementPicked);
+            EventManager.StartListening(Const.GameEvents.ELEMENTS_SELECTED, OnElementsSelected);
         }
         private void OnDisable()
         {
             EventManager.StopListening(Const.GameEvents.ELEMENT_PICKED, OnElementPicked);
+            EventManager.StopListening(Const.GameEvents.ELEMENTS_SELECTED, OnElementsSelected);
         }
         public void OnElementPicked(EventParam e)
         {
@@ -25,6 +27,12 @@ namespace Lionsfall
             {
                 Debug.LogError("Element picked event received with null element.");
             }
+        }
+        public void OnElementsSelected(EventParam e)
+        {
+            // Logic to remove all picked elements if they're 3 or more and of same type
+
+            pickedElements.Clear();
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created

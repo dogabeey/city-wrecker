@@ -69,6 +69,7 @@ namespace Lionsfall
             public const string CONTAINER_IS_FULL = "CONTAINER_IS_FULL";
             public const string ELEMENT_MATCHED = "ELEMENT_MATCHED";
             public const string ELEMENT_PICKED = "ELEMENT_PICKED";
+            public const string ELEMENTS_SELECTED = "ELEMENTS_SELECTED"; // Used when 1 or more elements are selected for a match on pointer up.
         }
     }
 }

@@ -59,9 +59,12 @@ public class Container : MonoBehaviour
 
     internal void Init(ElementData elementData)
     {
-        gameObject.name = elementData.elementName + " container";
-        elementName = elementData.elementName;
-        containerRenderer.material = elementData.containerMaterial;
+        if (elementData is JamElementData jamData)
+        {
+            gameObject.name = elementData.elementName + " container";
+            elementName = elementData.elementName;
+            containerRenderer.material = jamData.containerMaterial;
+        }
     }
 
     internal bool IsFull()
