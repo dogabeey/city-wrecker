@@ -45,4 +45,12 @@ namespace Lionsfall
             RelocateGrid(cells);
         }
     }
+
+    public class  MatchThreeGridSystem : SquareGridSystem
+    {
+        public Element wallPrefab;
+        public Element feature1Prefab;
+        public Element feature2Prefab;
+        public Element feature3Prefab;
+    }
 }

@@ -27,9 +27,8 @@ public class LevelEditor : SerializedScriptableObject
             for (int j = 0; j < gridHeight; j++)
             {
                 gridCells[i, j] = new CellData();
-                gridCells[i, j].elements = new List<ElementData>();
                 gridCells[i, j].coordinates = new Vector2Int(i, j);
-                gridCells[i, j].gridType = (gridCells[i, j].coordinates.x + gridCells[i, j].coordinates.y) % 2 == 1 ? GridType.empty : GridType.floor; // Set grid type based on coordinates
+                gridCells[i, j].gridType = GridType.element;
             }
         }
     }
@@ -41,7 +40,7 @@ public class LevelEditor : SerializedScriptableObject
             for (int j = 0; j < gridHeight; j++)
             {
                 gridCells[i, j].coordinates = new Vector2Int(i, j);
-                gridCells[i, j].gridType = (gridCells[i, j].coordinates.x + gridCells[i, j].coordinates.y) % 2 == 1 ? GridType.empty : GridType.floor; // Set grid type based on coordinates
+                gridCells[i, j].gridType = GridType.element;
             }
         }
     }
@@ -50,63 +49,55 @@ public class LevelEditor : SerializedScriptableObject
     {
 #if UNITY_EDITOR
         // INIT
-        // Check if odd cell
-        bool isOddCell = false;
-        if ((value.coordinates.x + value.coordinates.y) % 2 == 1)  isOddCell = true;
-        // Initialize 3x3 nine squares to each cell.
-        List<Rect> nineSquares = new List<Rect>(9);
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 3; j++)
-            {
-                Rect square = new Rect(rect.x + (i * rect.width / 3), rect.y + (j * rect.height / 3), rect.width / 3, rect.height / 3);
-                nineSquares.Add(square);
-            }
-        }
 
         // DRAWING
-        // Paint the rect black if It's an odd cell
-        if(isOddCell)
-            EditorGUI.DrawRect(rect, Color.black);
-        // Draw the nine squares in the cell
-        for (int i = 0; i < value.elements.Count; i++)
+        // Draw a color based on the grid type.
+        switch (value.gridType)
         {
-            EditorGUI.DrawRect(nineSquares[i], value.elements[i].elementColor);
+            case GridType.element:
+                EditorGUI.DrawRect(rect, Color.white);
+                break;
+            case GridType.wall: // Brown
+                EditorGUI.DrawRect(rect, new Color(0.545f, 0.271f, 0.075f));
+                break;
+            case GridType.feature1:
+                EditorGUI.DrawRect(rect, Color.red); // Red for feature1
+                break;
+            case GridType.feature2:
+                EditorGUI.DrawRect(rect, Color.yellow); // Yellow for feature2
+                break;
+            case GridType.feature3:
+                EditorGUI.DrawRect(rect, Color.green); // Green for feature3
+                break;
+            default:
+                break;
         }
+
 
         // EVENTS
         Event e = Event.current;
-        if (!isOddCell)
+        if (e.type == EventType.KeyDown && rect.Contains(e.mousePosition))
         {
-
-            if (e.type == EventType.MouseDown && e.button == 1 && rect.Contains(e.mousePosition))
+            // Add a switch case for each grid type
+            switch (e.keyCode)
             {
-                // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
-                GenericMenu menu = new GenericMenu();
-                foreach (ElementData element in GameManager.ElementData)
-                {
-                    menu.AddItem(new GUIContent("Add " + element.elementName.ToString()), false, () =>
-                    {
-                        // Add the color to the cell
-                        value.elements.Add(element);
-                    });
-                }
-                menu.AddSeparator("");
-                // Add values for the existing elements in the cell to remove them.
-                for (int i = 0; i < value.elements.Count; i++)
-                {
-                    int temp = i;
-                    ElementData element = value.elements[temp];
-                    menu.AddItem(new GUIContent("(" + temp + ") Remove " + element.elementName.ToString()), false, () =>
-                    {
-                        // Remove the color from the cell
-                        value.elements.RemoveAt(temp);
-                    });
-                }
-
-                menu.ShowAsContext();
-                e.Use();
+                case KeyCode.E: // Element
+                    value.gridType = GridType.element;
+                    break;
+                case KeyCode.W: // Wall
+                    value.gridType = GridType.wall;
+                    break;
+                case KeyCode.A: // Feature1
+                    value.gridType = GridType.feature1;
+                    break;
+                case KeyCode.S: // Feature2
+                    value.gridType = GridType.feature2;
+                    break;
+                case KeyCode.D: // Feature3
+                    value.gridType = GridType.feature3;
+                    break;
             }
+            e.Use();
         }
         GUI.changed = true;
 

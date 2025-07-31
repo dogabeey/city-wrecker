@@ -25,6 +25,7 @@ namespace Lionsfall
 
         internal void Init(int i, int j, CellData cellData)
         {
+            /*
             currentElements = new List<Element>();
             coordinates = new Vector2Int(i, j);
             for (int x = 0; x < cellData.elements.Count; x++)
@@ -48,6 +49,7 @@ namespace Lionsfall
 
                 currentElements.Add(element);
             }
+            */
         }
     }
 }
