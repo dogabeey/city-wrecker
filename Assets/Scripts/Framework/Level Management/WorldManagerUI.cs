@@ -11,7 +11,7 @@ namespace Lionsfall
     
     public class WorldManagerUI : MonoBehaviour
     {
-        public WorldManager worldManager;
+        public GameManager worldManager;
         public LevelListUI levelListUI;
         public Transform container;
         [AssetsOnly]
@@ -44,7 +44,7 @@ namespace Lionsfall
         }
         private void LoadWorld(World world)
         {
-            WorldManager.Instance.CurrentWorld = world;
+            GameManager.Instance.CurrentWorld = world;
             ScreenManager.Instance.Show(Screens.LevelList);
         }
     }

@@ -8,15 +8,15 @@ using UnityEngine.UI;
 
 namespace Lionsfall
 {
-    public class WorldManager : SerializedMonoBehaviour
+    public class GameManager : SerializedMonoBehaviour
     {
-        public static WorldManager Instance;
+        public static GameManager Instance;
 
         [Header("References")]
         public List<World> worlds;
         public Transform levelContainer;
         public ParticleSystem winParticle;
-        public List<ElementData> elementData;
+        public static List<ElementData> ElementData => Resources.Load<ElementDataSettings>(Const.Paths.ELEMENT_DATA_SETTINGS).elementDataList;
 
         private World currentWorld;
 
@@ -120,7 +120,7 @@ namespace Lionsfall
 
         public ElementData GetElementDataByName(string elementName)
         {
-            return elementData.Find(x => x.elementName == elementName);
+            return ElementData.Find(x => x.elementName == elementName);
         }
     }
 }

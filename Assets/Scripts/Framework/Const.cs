@@ -15,7 +15,7 @@ namespace Lionsfall
     {
         public struct Paths
         {
-            public const string SETTINGS = "Settings";
+            public const string ELEMENT_DATA_SETTINGS = "Settings/ElementDataSettings";
         }
         public struct Values
         {

@@ -27,7 +27,7 @@ public class ContainerManager : MonoBehaviour
 
     private void Start()
     {
-        GenerateContainers(LevelScene.Instance.LevelEditor.containerColorList);
+        //GenerateContainers(LevelScene.Instance.LevelEditor.containerColorList);
     }
 
     // Create containers using the main container prefab.
@@ -38,7 +38,7 @@ public class ContainerManager : MonoBehaviour
         foreach (string elementName in elementNameList)
         {
             int index = elementNameList.IndexOf(elementName);
-            ElementData elementData = WorldManager.Instance.GetElementDataByName(elementName);
+            ElementData elementData = GameManager.Instance.GetElementDataByName(elementName);
 
             Container container = Instantiate(mainContainerPrefab, containersParent);
             container.transform.position = firstContainerPos.position + containerOffset * index;

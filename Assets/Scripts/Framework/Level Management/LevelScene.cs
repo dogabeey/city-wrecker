@@ -2,6 +2,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -10,16 +11,16 @@ namespace Lionsfall
 {
     public class LevelScene : MonoBehaviour
     {
+        public string levelName;
+        [InlineEditor]
+        public LevelEditor levelData; // This is the data for the current level, which can be used to access the level's elements, containers, and other properties.
+
         [HideInInspector] public bool isWin;
         [HideInInspector] public bool isLose;
         [HideInInspector] public bool isEnded;
         [HideInInspector] public ContainerManager containerManager;
 
         public static LevelScene Instance;
-
-        public string levelName;
-        [InlineEditor(Expanded = true)]
-        public LevelEditor LevelEditor;
 
         private void Start()
         {
@@ -49,5 +50,21 @@ namespace Lionsfall
 
         }
 
+        public static IEnumerable<string> GetAllElementNames()
+        {
+            GameManager worldManager = GameManager.Instance;
+            if (worldManager == null)
+            {
+                Debug.LogWarning("WorldManager or currentWorld is not initialized.");
+                return Enumerable.Empty<string>();
+            }
+            else
+            {
+                return GameManager.ElementData.Select(data => data.elementName)
+                                                .Where(name => !string.IsNullOrEmpty(name))
+                                                .Distinct()
+                                                .OrderBy(name => name);
+            }
+        }
     }
 }

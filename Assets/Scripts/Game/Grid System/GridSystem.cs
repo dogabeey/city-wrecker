@@ -24,7 +24,8 @@ public abstract class GridSystem : MonoBehaviour
 
     private void Start()
     {
-        GenerateGrid(LevelScene.Instance.LevelEditor.gridCells);
+        CellData[,] cells = new CellData[0, 0]; // Initialize with an empty array or load your cell data here.
+        GenerateGrid(cells);
     }
 
     public abstract void GenerateGrid(CellData[,] cells);

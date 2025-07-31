@@ -1,0 +1,222 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cee50606b0df41418fb84be44891bf2, type: 3}
+  m_Name: ElementDataSettings
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: -773559955, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    - {fileID: -854481302, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    - {fileID: 1939454807, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    - {fileID: -1384170357, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    - {fileID: 542982282, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    - {fileID: -2033369276, guid: ea2822209d2efe3469c38e380e2d89b7, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: elementDataList
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[ElementData, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 1|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Heart
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0.108490586
+    - Name: 
+      Entry: 4
+      Data: 0.108490586
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 2|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Elliptic
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0.558688343
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Triangle
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.698039234
+    - Name: 
+      Entry: 4
+      Data: 0.9607844
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 4|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Rounded
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.2784314
+    - Name: 
+      Entry: 4
+      Data: 0.7686275
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Capsule
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.596078455
+    - Name: 
+      Entry: 4
+      Data: 0.2901961
+    - Name: 
+      Entry: 4
+      Data: 0.9215687
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|MatchThreeElementData, Assembly-CSharp
+    - Name: elementName
+      Entry: 1
+      Data: Flower
+    - Name: elementColor
+      Entry: 7
+      Data: UnityEngine.Color, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.9960785
+    - Name: 
+      Entry: 4
+      Data: 0.396078467
+    - Name: 
+      Entry: 4
+      Data: 0.623529434
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: elementSprite
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

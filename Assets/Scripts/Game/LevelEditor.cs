@@ -83,7 +83,7 @@ public class LevelEditor : SerializedScriptableObject
             {
                 // Add value dropdown menu that shows each ElementData color. Clicking them will add the color to the cell.
                 GenericMenu menu = new GenericMenu();
-                foreach (ElementData element in WorldManager.Instance.elementData)
+                foreach (ElementData element in GameManager.ElementData)
                 {
                     menu.AddItem(new GUIContent("Add " + element.elementName.ToString()), false, () =>
                     {
@@ -115,7 +115,7 @@ public class LevelEditor : SerializedScriptableObject
     }
     public static IEnumerable<string> GetAllElementNames()
     {
-        WorldManager worldManager = WorldManager.Instance;
+        GameManager worldManager = GameManager.Instance;
         if (worldManager == null)
         {
             Debug.LogWarning("WorldManager or currentWorld is not initialized.");
@@ -123,7 +123,7 @@ public class LevelEditor : SerializedScriptableObject
         }
         else
         {
-            return worldManager.elementData.Select(data => data.elementName)
+            return GameManager.ElementData.Select(data => data.elementName)
                                             .Where(name => !string.IsNullOrEmpty(name))
                                             .Distinct()
                                             .OrderBy(name => name);

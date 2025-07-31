@@ -1,3 +1,4 @@
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 [System.Serializable]
@@ -16,5 +17,6 @@ public class JamElementData : ElementData
 [System.Serializable]
 public class MatchThreeElementData : ElementData
 {
+    [PreviewField]
     public Sprite elementSprite;
 }

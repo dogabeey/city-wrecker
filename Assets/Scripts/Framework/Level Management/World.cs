@@ -13,7 +13,7 @@ namespace Lionsfall
         {
             get
             {
-                return WorldManager.Instance.CurrentWorld;
+                return GameManager.Instance.CurrentWorld;
             }
         }
 

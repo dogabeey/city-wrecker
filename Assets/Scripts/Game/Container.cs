@@ -42,7 +42,7 @@ public class Container : MonoBehaviour
 
     public static IEnumerable<string> GetAllElementNames()
     {
-        WorldManager worldManager = WorldManager.Instance;
+        GameManager worldManager = GameManager.Instance;
         if (worldManager == null)
         {
             Debug.LogWarning("WorldManager or currentWorld is not initialized.");
@@ -50,7 +50,7 @@ public class Container : MonoBehaviour
         }
         else
         {
-            return worldManager.elementData.Select(data => data.elementName)
+            return GameManager.ElementData.Select(data => data.elementName)
                                             .Where(name => !string.IsNullOrEmpty(name))
                                             .Distinct()
                                             .OrderBy(name => name);
