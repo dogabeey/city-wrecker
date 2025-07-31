@@ -5,7 +5,8 @@ namespace Lionsfall
 {
     public class MatchTracker : MonoBehaviour
     {
-        internal List<ThreeMatchElement> pickedElements = new List<ThreeMatchElement>();
+        internal ThreeMatchElement firstElement;
+        internal ThreeMatchElement secondElement;
 
         private void OnEnable()
         {
@@ -21,7 +22,18 @@ namespace Lionsfall
         {
             if(e.paramElement != null)
             {
-                pickedElements.Add(e.paramElement as ThreeMatchElement);
+                if(e.paramInt == 1)
+                {
+                    firstElement = e.paramElement as ThreeMatchElement;
+                }
+                else if (e.paramInt == 2)
+                {
+                    secondElement = e.paramElement as ThreeMatchElement;
+                }
+                else
+                {
+                    Debug.LogError("Invalid parameter int value received for element picked event: " + e.paramInt);
+                }
             }
             else
             {
@@ -32,13 +44,13 @@ namespace Lionsfall
         {
             // Logic to remove all picked elements if they're 3 or more and of same type
 
-            pickedElements.Clear();
+            firstElement = null;
+            secondElement = null;
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-            pickedElements = new List<ThreeMatchElement>();
         }
 
         // Update is called once per frame

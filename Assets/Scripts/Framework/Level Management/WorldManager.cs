@@ -1,4 +1,5 @@
 using DG.Tweening;
+using Sirenix.OdinInspector;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,8 +8,10 @@ using UnityEngine.UI;
 
 namespace Lionsfall
 {
-    public class WorldManager : SingletonComponent<WorldManager>
+    public class WorldManager : SerializedMonoBehaviour
     {
+        public static WorldManager Instance;
+
         [Header("References")]
         public List<World> worlds;
         public Transform levelContainer;
@@ -32,6 +35,7 @@ namespace Lionsfall
             }
         }
 
+        
         private void OnEnable()
         {
             EventManager.StartListening(Const.GameEvents.LEVEL_COMPLETED, OnLevelCompleted);
@@ -54,8 +58,15 @@ namespace Lionsfall
             ScreenManager.Instance.Show(Screens.LoseScreen));
         }
 
+        private void OnValidate()
+        {
+            Instance = this;
+        }
+
         private void Start()
         {
+            Instance = this;
+
             Application.targetFrameRate = 60;
             CurrentWorld = worlds[0];
             LoadCurrentLevel();

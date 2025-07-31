@@ -13,7 +13,10 @@ namespace Lionsfall
     }
     public struct Const
     {
-
+        public struct Paths
+        {
+            public const string SETTINGS = "Settings";
+        }
         public struct Values
         {
             public const float PICKUP_DROP_HEIGHT_TRY_STEP = 1f;

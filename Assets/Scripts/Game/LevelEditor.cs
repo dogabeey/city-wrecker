@@ -2,7 +2,9 @@ using UnityEngine;
 using UnityEditor;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using Sirenix.Utilities.Editor;
+#endif
 using Lionsfall;
 using System.Linq;
 
@@ -46,8 +48,7 @@ public class LevelEditor : SerializedScriptableObject
 
     public CellData DrawCell(Rect rect, CellData value)
     {
-
-
+#if UNITY_EDITOR
         // INIT
         // Check if odd cell
         bool isOddCell = false;
@@ -109,6 +110,7 @@ public class LevelEditor : SerializedScriptableObject
         }
         GUI.changed = true;
 
+#endif
         return value;
     }
     public static IEnumerable<string> GetAllElementNames()

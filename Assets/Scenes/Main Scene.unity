@@ -4946,9 +4946,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 254586920}
     - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: worlds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
       propertyPath: elementData.Array.size
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
     - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
       propertyPath: elementData.Array.data[6].elementName
       value: Pink
@@ -5001,6 +5009,109 @@ PrefabInstance:
       propertyPath: elementData.Array.data[6].containerMaterial
       value: 
       objectReference: {fileID: 2100000, guid: 6115f157954461c42bfdc6d39eb8076b, type: 2}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: serializationData.PrefabModifications.Array.size
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[0]'
+      value: '"path":"elementData","value":{"$id":0,"$type":"System.Collections.Generic.List`1[[ElementData,
+        Assembly-CSharp]], mscorlib","$rlength":3,"$rcontent":[{"$id":1,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Blue","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.21226418,0.4517784,1,1},"elementMaterial":$eref:0,"containerMaterial":$eref:0},{"$id":2,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Green","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.09729272,1,0.00471699238,1},"elementMaterial":$eref:1,"containerMaterial":$eref:1},{"$id":3,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Red","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",1,0,0,1},"elementMaterial":$eref:2,"containerMaterial":$eref:2}]}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[1]'
+      value: '"path":"elementData.[0]","value":{"$id":0,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Blue","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.21226418,0.4517784,1,1},"elementMaterial":$eref:0,"containerMaterial":$eref:0}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[2]'
+      value: '"path":"elementData.[0].containerMaterial","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[3]'
+      value: '"path":"elementData.[0].elementColor","value":{"$id":0,"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.21226418,0.4517784,1,1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[4]'
+      value: '"path":"elementData.[0].elementMaterial","value":$eref:0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[5]'
+      value: '"path":"elementData.[0].elementName","value":{"$id":0,"$type":"System.String,
+        mscorlib","Blue"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[6]'
+      value: '"path":"elementData.[1]","value":{"$id":0,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Green","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.09729272,1,0.00471699238,1},"elementMaterial":$eref:1,"containerMaterial":$eref:1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[7]'
+      value: '"path":"elementData.[1].containerMaterial","value":$eref:1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[8]'
+      value: '"path":"elementData.[1].elementColor","value":{"$id":0,"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",0.09729272,1,0.00471699238,1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[9]'
+      value: '"path":"elementData.[1].elementMaterial","value":$eref:1'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[10]'
+      value: '"path":"elementData.[1].elementName","value":{"$id":0,"$type":"System.String,
+        mscorlib","Green"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[11]'
+      value: '"path":"elementData.[2]","value":{"$id":0,"$type":"JamElementData,
+        Assembly-CSharp","elementName":"Red","elementColor":{"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",1,0,0,1},"elementMaterial":$eref:2,"containerMaterial":$eref:2}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[12]'
+      value: '"path":"elementData.[2].containerMaterial","value":$eref:2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[13]'
+      value: '"path":"elementData.[2].elementColor","value":{"$id":0,"$type":"UnityEngine.Color,
+        UnityEngine.CoreModule",1,0,0,1}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[14]'
+      value: '"path":"elementData.[2].elementMaterial","value":$eref:2'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModifications.Array.data[15]'
+      value: '"path":"elementData.[2].elementName","value":{"$id":0,"$type":"System.String,
+        mscorlib","Red"}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: serializationData.PrefabModificationsReferencedUnityObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6ee122385aff2874591f3528d70dabf6, type: 2}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4f4402083a692ca4e9cb007ab99c4eb4, type: 2}
+    - target: {fileID: 7722314759461277706, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
+      propertyPath: 'serializationData.PrefabModificationsReferencedUnityObjects.Array.data[2]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8b3cd2681b7f25844b340abeaeb23566, type: 2}
     - target: {fileID: 7722314759461277707, guid: e4052a4b50fee524d98d042dbbd13183, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
